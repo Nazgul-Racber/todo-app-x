@@ -31,3 +31,26 @@ body{
         font-family: 'Rajdhani', sans-serif;
     }
 }
+
+@media screen and (max-width:768px){
+    .container{
+        width: 95%;
+    }
+}
+@media screen and (max-width:470px){
+    .container{
+        width: 100%;
+    }
+}
+
+section{
+    width: 100%;
+    background-color: #262e4c;
+    
+}
+.text-list{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+
+
