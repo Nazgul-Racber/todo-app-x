@@ -124,3 +124,14 @@ li span{
 li.checked > .fa-check{
     color: #00e676;
 }
+
+li.checked > span {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 576px){
+    li span {
+        font-size: 0.8rem;
+    }
+}
