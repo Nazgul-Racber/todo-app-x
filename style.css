@@ -52,5 +52,21 @@ section{
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
+input{
+    border: none;
+    outline: none;
+    background-color: wheat;
+    font-size: 18px;
+    color: #262e4c;
+    padding: 6px;
+    width: calc(100% - 80px);
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(250, 206, 125, 0.868);
+    }
 
+
+}
 
