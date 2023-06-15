@@ -19,6 +19,9 @@ btn.addEventListener("click", () => {
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
     // localStorage.clear(); //?local'i temizlemek için.
+    //   domaYaz()
+      input.value = "";
+    //   input.focus();
   }
   console.log(tasks);
 });
