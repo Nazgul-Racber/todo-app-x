@@ -112,7 +112,7 @@ li i{
     &:hover{
         opacity: 0.8;
         transform: scale(1.2);
-        color: rgb(189, 53, 53);
+        /* color: rgb(189, 53, 53); */
     }
 }
 

@@ -33,3 +33,29 @@ btn.addEventListener("click", () => {
   }
   console.log(tasks);
 });
+
+//enter
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+      btn.click()
+  }
+})
+
+ul.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-trash")) {
+    const id = e.target.parentElement.id;
+    if (e.target.classList.contains("fa-trash")) 
+      tasks = tasks.filter((task)=> task.id != id) //? çöp kutusuna tıklanan li'nin arrayden atılma işlemi.
+      localStorage.setItem('tasks', JSON.stringify(tasks))
+      e.target.parentElement.remove();
+  }
+
+  if (e.target.classList.contains("fa-checked"))
+})
+
+window.addEventListener("load", () => {
+  tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.forEach((task) => {
+    domaYaz(task);
+  })
+})
